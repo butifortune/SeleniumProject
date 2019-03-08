@@ -1,0 +1,97 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "apply job online from ILaB website",
+        "description": "",
+        "id": "ilab-job;apply-job-online-from-ilab-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 108792064063,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want to navigate to iLab website",
+            "match": {
+              "location": "Tests.iWantToNavigateToILabWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23932217407,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Career and job link",
+            "match": {
+              "location": "Tests.iClickOnCareerAndJobLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8192839585,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter name as  \"Buti\" and email as \"automationAssessment@iLABQuality.com\" and phone number then click Send Application button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buti",
+                  "offset": 18
+                },
+                {
+                  "val": "automationAssessment@iLABQuality.com",
+                  "offset": 38
+                }
+              ],
+              "location": "Tests.iEnterNameAsAndEmailAsAndPhoneNumberThenClickSendApplicationButton(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1065573188,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...ad at least one file[].\u003e but was:\u003c...ad at least one file[d].\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat iLab.Tests.verifyUploadErrorMessage(Tests.java:61)\r\n\tat ✽.Then Verify upload error message(iLab.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Verify upload error message",
+            "match": {
+              "location": "Tests.verifyUploadErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@iLaBProject"
+          }
+        ]
+      }
+    ],
+    "name": "iLaB Job",
+    "description": "",
+    "id": "ilab-job",
+    "keyword": "Feature",
+    "uri": "iLab.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@iLaBProject"
+      }
+    ]
+  }
+]
