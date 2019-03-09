@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="142606" started-at="2019-03-08T09:49:45Z" finished-at="2019-03-08T09:52:07Z">
+  <suite name="Surefire suite" duration-ms="134505" started-at="2019-03-09T00:50:33Z" finished-at="2019-03-09T00:52:47Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@136f0f5]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="142606" started-at="2019-03-08T09:49:45Z" finished-at="2019-03-08T09:52:07Z">
+    <test name="Surefire test" duration-ms="134505" started-at="2019-03-09T00:50:33Z" finished-at="2019-03-09T00:52:47Z">
       <class name="runner.TestNGRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestNGRunner@136f0f5]" name="setUpClass" is-config="true" duration-ms="379" started-at="2019-03-08T11:49:45Z" finished-at="2019-03-08T11:49:45Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestNGRunner@136f0f5]" name="setUpClass" is-config="true" duration-ms="290" started-at="2019-03-09T02:50:33Z" finished-at="2019-03-09T02:50:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@136f0f5]" name="feature" duration-ms="142030" started-at="2019-03-08T11:49:45Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-03-08T11:52:07Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@136f0f5]" name="feature" duration-ms="134074" started-at="2019-03-09T02:50:33Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-03-09T02:52:47Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
 Caused by: org.junit.ComparisonFailure: expected:<...ad at least one file[].> but was:<...ad at least one file[d].>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at iLab.Tests.verifyUploadErrorMessage(Tests.java:61)
+	at iLab.Tests.verifyUploadErrorMessage(Tests.java:57)
 	at ✽.Then Verify upload error message(iLab.feature:8)
 ]]>
             </full-stacktrace>
@@ -70,7 +70,7 @@ Caused by: org.junit.ComparisonFailure: expected:<...ad at least one file[].> bu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@136f0f5]" name="tearDownClass" is-config="true" duration-ms="25" started-at="2019-03-08T11:52:07Z" finished-at="2019-03-08T11:52:07Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@136f0f5]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2019-03-09T02:52:47Z" finished-at="2019-03-09T02:52:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

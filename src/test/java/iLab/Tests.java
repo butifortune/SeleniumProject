@@ -26,11 +26,7 @@ public class Tests  {
 
     @Given("^I want to navigate to iLab website$")
     public void iWantToNavigateToILabWebsite() throws Throwable {
-        driverManager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
-        driverManager.driver= driverManager.getWebDriver();
-        driverManager.driver.get("https://www.ilabquality.com/");
-        driverManager.driver.manage().window().maximize();
-        Thread.sleep(1000);
+
     }
     @After
     public void quit(Scenario scenario){
@@ -59,6 +55,15 @@ public class Tests  {
     @Then("^Verify upload error message$")
     public void verifyUploadErrorMessage() throws Throwable {
         Assert.assertEquals(ILabAppyJob.getActualError(), ILabAppyJob.getExpectedError());
+    }
+
+    @Given("^I want to navigate to iLab website on \"([^\"]*)\"$")
+    public void iWantToNavigateToILabWebsiteOn(String browser) throws Throwable {
+        driverManager = DriverManagerFactory.getDriverManager(DriverType.valueOf(browser));
+        driverManager.driver= driverManager.getWebDriver();
+        driverManager.driver.get("https://www.ilabquality.com/");
+        driverManager.driver.manage().window().maximize();
+        Thread.sleep(1000);
     }
 }
 

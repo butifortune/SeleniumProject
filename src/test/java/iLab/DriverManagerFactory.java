@@ -8,15 +8,15 @@ public class DriverManagerFactory {
                 driverManager = new ChromeDriverManager();
                 break;
 
-                case FIREFOX:
-                driverManager = new FirefoxDriverManager();
+                case IE:
+                    driverManager = new IEDriverManager();
                 break;
 
-            case IE:
-                break;
+            //case IE: FIREFOX
+               // break;
             default:
-            driverManager = new IEDriverManager();
-            break;
+                driverManager = new FirefoxDriverManager();
+                break;
 
         }
         return driverManager;
