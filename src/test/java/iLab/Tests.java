@@ -40,7 +40,7 @@ public class Tests  {
     }
 
 
-    @And("^I click on Career and job link$")
+    @And("^I click on Career, South Africa, FirstJobLink then ApplyOnlineButton$")
     public void iClickOnCareerAndJobLink(){
         HomePage homePageAndApply = new HomePage(driverManager.driver);
        homePageAndApply.navigateHomPageAndAppy();
