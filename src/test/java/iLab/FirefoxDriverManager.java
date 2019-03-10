@@ -7,7 +7,7 @@ public class FirefoxDriverManager extends DriverManager {
 
     @Override
     protected void createWebDriver() {
-        String path = System.getProperty("user.dir") + "\\resources\\drivers\\Firefox\\geckodriver.exe";
+        String path = System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\Firefox\\geckodriver.exe";
         System.setProperty("webdriver.Firefox.driver", path);
 
         driver = new FirefoxDriver();

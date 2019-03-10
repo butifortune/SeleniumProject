@@ -2,7 +2,7 @@ package iLab;
 
 public class DriverManagerFactory {
     public static DriverManager getDriverManager(DriverType type){
-       DriverManager driverManager = null;
+       DriverManager driverManager;
         switch(type){
             case CHROME:
                 driverManager = new ChromeDriverManager();

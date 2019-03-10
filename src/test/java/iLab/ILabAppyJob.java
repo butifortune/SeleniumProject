@@ -15,7 +15,7 @@ public class ILabAppyJob {
     private By phoneTextbox = By.id("phone");
     private By sendApplicationButton     = By.id("wpjb_submit");
     private static By uploadFileError  = By.className("wpjb-errors");
-    private static String expectedError= "You need to upload at least one filed.";
+    private static String expectedError= "You need to upload at least one file";
 
     public void applyJob(String name, String email) throws Throwable{
         this.setName(name);

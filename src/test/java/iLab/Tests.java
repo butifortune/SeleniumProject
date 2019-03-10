@@ -54,7 +54,8 @@ public class Tests  {
 
     @Then("^Verify upload error message$")
     public void verifyUploadErrorMessage() throws Throwable {
-        Assert.assertEquals(ILabAppyJob.getActualError(), ILabAppyJob.getExpectedError());
+
+        Assert.assertTrue(ILabAppyJob.getActualError().toLowerCase().contains(ILabAppyJob.getExpectedError().toLowerCase() ));
     }
 
     @Given("^I want to navigate to iLab website on \"([^\"]*)\"$")

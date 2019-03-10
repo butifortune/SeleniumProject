@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage {
     static WebDriver driver;
+
     public HomePage(WebDriver driver){
         this.driver = driver;}
 
